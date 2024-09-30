@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Coiny&family=Corben:wght@700&family=Fredoka+One&family=Happy+Monkey&family=Lato:wght@300;400;700;900&family=Nunito:wght@300;400;500;600;700;800;900;1000&family=Open+Sans:wght@500;600;700;800&family=Outfit:wght@200;300;400&family=Poppins:wght@300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Varela+Round&display=swap');
+
+.LandingPart1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.body{
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    /* justify-content: top; */
+}
+
+.bodyL{
+    /* background-color: white; */
+    /* padding: 5vmin; */
+    /* padding: 5vmin 10vmin 15vmin 10vmin;
+    border-radius: 3vmin; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 2vmin 8vmin;
+
+}
+
+.bodyR{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vmin;
+
+}
+
+.bodyR img{
+    width: 60%;
+    /* height:80% ; */
+    transform: rotate(13deg);
+    box-shadow: 2px 2px 10px rgb(136, 135, 135);
+    margin: 0vmin 2vmin 8vmin 2vmin;
+}
+
+.text{
+    padding: 10vmin 0 ;
+    width: 80%;
+}
+
+.text h2{
+    font-size: 9vmin;
+    text-align: left;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Quicksand;
+    color: black;
+    font-weight: bolder;
+}
+
+.more{
+    font-size: 12vmin;
+    text-align: left;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Quicksand;
+    color: black;
+    font-weight: bolder;
+    animation: more 2s infinite linear;
+    /* transition: 1s ease-in-out; */
+}
+
+@keyframes more {
+    0%{
+        background: linear-gradient(80deg, yellow , rgb(34, 225, 34));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+    25%{
+        background: linear-gradient(80deg, rgb(34, 225, 34), rgb(63, 178, 227))
+        ;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+    50%{
+        background: linear-gradient(80deg, rgb(63, 178, 227), rgb(221, 35, 85));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+    75%{
+        background: linear-gradient(80deg, rgb(221, 35, 85), orange);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+    100%{
+        background: linear-gradient(80deg, orange, yellow);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+}
+
+
+.point{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    margin: 2.5vmin;
+    /* border: 1px solid black; */
+}
+
+.point p{
+    margin-top: 1.5vmin;
+    font-size: 3.5vmin;
+    font-family: Quicksand;
+    font-weight: bold;
+    line-height: 3.8vmin;
+    color: #757981;
+    letter-spacing: 0.12vmin;
+    line-height: 6vmin;
+}
+
+.star{
+    margin:2vmin;
+    font-size: 3vmin;
+}
+
+
+.start{
+    padding: 1.5vmin 3vmin;
+    background-color: rgb(5, 226, 5);
+    color: white;
+    font-size: 3vmin;
+    font-weight: bold;
+    font-family: Quicksand;
+    margin: 4vmin;
+    border-radius: 5vmin;
+
+}
+
+.start:hover{
+    background-color: lime;
+}
+
+.part2{
+    height: 100vh;
+    background-color: #dbf0ff;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    padding: 5vmin;
+}
+
+.howTitle{
+    font-size: 5vmin;
+    margin: 3vmin;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.sectionContainer{
+    width: 85%;
+    /* width: 70vmin; */
+    /* border: 1px solid black; */
+    display: flex;
+    /* align-items: left; */
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1vmin;
+    padding: 4vmin;
+    font-family: Poppins;
+    font-size: 2.5vmin;
+    box-shadow: 1px 1px 10px #98b6cb;
+    
+}
+
+.box{
+    display: flex;
+    align-items: top;
+    flex-direction: row;
+   justify-content: left;
+   margin: 2vmin;
+}
+
+.icon{
+    margin: 0 2vmin 0 0;
+    color: grey;
+
+}
+
+@media only screen and (max-width: 767px) {
+    .body{
+        flex-direction: column;
+    }
+    .bodyL{
+        width: 100%;
+    }
+    .bodyR{
+        width: 100%;
+    }
+
+    .bodyR img{
+        width: 50%;
+    }
+
+    .text{
+        width: 90%;
+    }
+
+    .text h2{
+        font-size: 10vmin;
+    }
+    .more{
+        font-size: 12vmin;
+    }
+
+    .point p{
+        font-size: 3.2vmin;
+
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .bodyR img{
+        width: 80%;
+    }
+
+    .text{
+        width: 80%;
+    }
+    .text h2{
+        font-size: 9vmin;
+    }
+    .more{
+        font-size: 12vmin;
+    }
+    .point p{
+        font-size: 3.2vmin;
+
+    }
+}

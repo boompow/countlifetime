@@ -1,0 +1,362 @@
+/************************* Password confirmation for Profile Page ********************************* */
+.profilePasswordCheck{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePasswordCheckContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 95vmin;
+    padding: 5vmin 5vmin 10vmin 5vmin;
+    border-radius: 1vmin;
+    font-family: Inter;
+    overflow: hidden;
+    position: relative;
+}
+
+.profilePasswordCheckContainer h1{
+    text-align: center;
+    margin-bottom: 3vmin;
+   letter-spacing: 0.2vmin;
+}
+
+.profilePasswordCheckContainer p{
+    font-size: 3vmin;
+    color: grey;
+    text-align: center;
+}
+
+.profilePasswordCheckContainer form{
+    margin: 1vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePasswordCheckContainer form button{
+    background-color: rgb(13, 212, 86);
+    color: white;
+    width:60vmin;
+    margin: 2vmin 1.5vmin 4vmin 1.5vmin;
+    padding: 1vmin;
+    font-family: Outfit;
+    font-size: 3vmin;
+    border-radius: 0.7vmin;
+}
+
+.profilePasswordCheckContainer form button:hover{
+    background-color: rgb(13, 246, 71);
+}
+
+.profilePasswordCheckContainer div{
+    margin: 1vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginLink2{
+margin: 0 1vmin;
+text-decoration: underline;
+cursor: pointer;
+}
+
+.decoration{
+    margin-top: 2vmin;
+    height: 5%;
+    width:100%;
+    position: absolute;
+    bottom: -1vmin;
+    background: linear-gradient(50deg, #ff00d4, #00ddff, #00ff80 );
+}
+
+@media only screen and (max-width: 767px) {
+    .profilePasswordCheckContainer p{
+        font-size: 4vmin;
+    }
+    .profilePasswordCheckContainer form input{
+        width:80vmin;
+        padding: 2.5vmin;
+        font-size: 4vmin;   
+    }
+    .profilePasswordCheckContainer form button{
+        width:80vmin;
+        padding: 2.5vmin;
+        font-size: 4vmin;
+    }
+    .decoration{
+        height: 3%;
+       
+    }
+}
+
+
+
+
+/************************* Profile Page ********************************* */
+
+.profilePage{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 95vmin;
+    min-height: 60vmin;
+    padding: 5vmin 5vmin 10vmin 5vmin;
+    border-radius: 1vmin;
+    font-family: Inter;
+    font-size: 2.5vmin;
+    overflow: hidden;
+    position: relative;
+}
+
+.profileContainer_header{
+    background-color: white;
+    border-bottom: 0.3vmin solid grey;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 0 2vmin 1vmin;
+    margin-bottom: 1vmin;
+}
+
+.profileContainer_body{
+    height: 90%;
+    width: 100%;
+}
+
+.profileContainer_body > div{
+    padding: 2vmin 4vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.toggleContainer {
+    border: 0.2vmin solid rgb(166, 165, 165);
+    width: 7.5vmin;
+    height: 3.6vmin;
+    border-radius: 2vmin;
+    margin: 0 5vmin;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+       
+.toggle {
+    content: '';
+    position: absolute;
+    height: 3vmin;
+    width: 3vmin;
+    border-radius: 50%;
+    background-color: rgb(81, 78, 78);
+    left: 0%;
+    transition:  all 0.5s;
+}
+    
+.profile_checkbox {
+    display : none;
+} 
+
+.profileContainer_body_value{
+    font-weight: bold;
+    font-family: Outfit;
+    font-style: italic;
+    padding: 0 2vmin;
+    color: black;
+}
+
+.passContainerProfile{
+    width:40vmin;
+    margin: 2vmin 1.5vmin 1vmin 1.5vmin;
+    outline: none;
+    /* border-bottom: 0.3vmin solid lime; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.passProfile{
+    width: 35vmin;
+    padding: 1vmin;
+    outline: none;
+    font-family: Inter;
+    font-size: 2.5vmin;
+    border-radius: 0.7vmin 0 0 0.7vmin;
+}
+.eyeProfile{
+    width: 5vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: grey;
+    z-index: 2;
+    font-size: 3vmin;
+    /* border-radius:0 0.7vmin 0.7vmin 0; */
+}
+.profileContainer_body_password{
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.profileContainer_body_password button{
+    position: absolute;
+    right: 0;
+    color: black; 
+    margin: 0 2vmin 0 0;
+    background-color: transparent;
+    font-size: 3.5vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.5vmin;
+    height: 5.5vmin;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profileContainer_body_password button:hover{
+    color: white;
+    background-color: lime;
+}
+
+.profileContainer_body_delete_account{
+    margin-top: 1vmin;
+    width: 100%;
+    padding: 2vmin 4vmin 1vmin 4vmin;
+    position: relative;
+}
+
+.profileContainer_body_delete_account > button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: Inter;
+    background-color: rgb(216, 12, 12);
+    padding: 1.5vmin 3vmin;
+    margin: 2vmin 4vmin;
+    border-radius: 1.5vmin;
+    color: white;
+    font-size: 2.5vmin;
+}
+
+.profileContainer_body_delete_account > button:hover{
+    background-color: red
+}
+
+.profileContainer_body_delete_account > div{
+    display: flex;
+    flex-direction: column;
+    border-top: 0.2vmin solid grey;
+    padding-top: 2vmin;
+}
+
+.profileContainer_body_delete_account > div p{
+    text-align: center;
+    margin-bottom: 3vmin;
+    font-weight: bold;
+    font-size: 3.5vmin;
+}
+
+.profileContainer_body_delete_account > div > div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.profileContainer_body_delete_account > div > div button{
+    padding: 1vmin 3vmin;
+    background-color: rgb(216, 12, 12);
+    padding: 1.5vmin 3vmin;
+    margin: 1vmin 4vmin 0 4vmin;
+    border-radius: 2vmin;
+    color: white;
+    font-size: 2.5vmin;
+}
+.profileContainer_body_delete_account > div > div button:hover{
+    background-color: red;
+}
+
+.decoration3{
+    margin-top: 2vmin;
+    height: 7%;
+    width:100%;
+    position: absolute;
+    bottom: -1vmin;
+    background: linear-gradient(50deg, #ff00d4, #00ddff, #00ff80 );
+}
+
+@media only screen and (max-width: 767px) {
+    .profilePage{
+        margin-top: 10vmin;
+    }
+    .profileContainer{
+        font-size: 4vmin;
+        padding: 5vmin 5vmin 15vmin 5vmin;
+    }
+    .passContainerProfile{
+        width:45vmin;
+    }
+    .passProfile{
+        width: 40vmin;
+        font-size: 4vmin;
+    }
+    .eyeProfile{
+        width: 5vmin;
+        font-size: 4.5vmin;
+    }
+    .profileContainer_body_password button{
+        font-size: 4vmin;
+        margin: 0 1vmin 0 0;
+        width: 6vmin;
+        height: 6vmin;
+    }
+    .toggleContainer{
+        width: 10vmin;
+        height: 4.3vmin;
+    }
+    .toggle{
+        width: 3.8vmin;
+        height: 3.8vmin;
+    }
+    .profileContainer_body_delete_account > button{
+        margin: 2vmin 4vmin 3vmin 4vmin;
+        font-size: 3.5vmin;
+    }
+    .profileContainer_body_delete_account > div p{
+        font-size: 4vmin;
+    }
+    .profileContainer_body_delete_account > div > div button{
+        padding: 1.5vmin 3vmin;
+        margin: 2vmin 4vmin 1 4vmin;
+        font-size: 3.5vmin;
+    }
+    .decoration3{
+        height: 6%;
+    }
+}

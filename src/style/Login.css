@@ -1,0 +1,204 @@
+.login{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(67, 143, 225, 0.5); */
+    /* border: 1px solid black; */
+    z-index: 10;
+    overflow: hidden;
+}
+/* yellow, rgb(34, 225, 34), rgb(63, 178, 227), rgb(221, 35, 85), orange */
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 95vmin;
+    padding: 5vmin 5vmin 10vmin 5vmin;
+    border-radius: 1vmin;
+    font-family: Inter;
+    overflow: hidden;
+    position: relative;
+}
+
+.loginContainer h1{
+   font-size: 6vmin;
+    letter-spacing: 0.2vmin;
+    text-transform: uppercase;
+    margin: 3vmin;
+    text-align: center;
+}
+
+.loginContainer p{
+    font-size: 3vmin;
+    color: grey;
+    text-align: center;
+}
+
+.loginContainer form{
+    margin: 1vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.emailLogin{
+    width:60vmin;
+    margin: 2vmin 1.5vmin 1vmin 1.5vmin;
+    padding: 1vmin;
+    outline: none;
+    font-family: Roboto;
+    font-size: 3vmin;
+    border-radius: 0.7vmin;
+    border: 0.1vmin solid grey;
+
+}
+
+
+.passContainerLogin{
+    width:60vmin;
+    margin: 2vmin 1.5vmin 1vmin 1.5vmin;
+    outline: none;
+    font-family: Roboto;
+    font-size: 3vmin;
+    border-radius: 0.7vmin;
+    border: 0.1vmin solid grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.passLogin{
+    width: 55vmin;
+    padding: 1vmin;
+    outline: none;
+    font-family: Outfit;
+    font-size: 3vmin;
+    border-radius: 0.7vmin 0 0 0.7vmin;
+}
+
+.eyeLogin{
+    width: 5vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: grey;
+    z-index: 2;
+    font-size: 3vmin;
+    border-radius:0 0.7vmin 0.7vmin 0;
+    /* border: 1px solid yellow; */
+}
+
+.loginContainer form button{
+    background-color: rgb(13, 212, 86);
+    color: white;
+    width:60vmin;
+    margin: 2vmin 1.5vmin 4vmin 1.5vmin;
+    padding: 1vmin;
+    font-family: Outfit;
+    font-size: 3vmin;
+    border-radius: 0.7vmin;
+    cursor: pointer;
+}
+
+.loginContainer form button:hover{
+    background-color: rgb(13, 246, 71);
+}
+
+.loginOptions{
+    width: 100%;
+    margin: 4vmin 2vmin 2vmin 2vmin ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    }
+
+.loginOptions p{
+    margin: 1vmin 5vmin;
+    font-size: 3vmin;
+    padding: 1vmin 2vmin;
+    cursor: pointer;
+    font-family: Outfit;
+}
+
+.loginOptions p:hover{
+    text-decoration: underline;
+    
+}
+
+.forgot{
+    position: absolute;
+    left: 0;
+}
+
+.signupLink{
+    position: absolute;
+    right: 0;
+}
+
+
+.decoration{
+    margin-top: 2vmin;
+    height: 8%;
+    width:100%;
+    position: absolute;
+    bottom: -1vmin;
+    background: linear-gradient(50deg, #ff00d4, #00ddff, #00ff80 );
+}
+
+.Login_cancel{
+    font-size: 4vmin;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(252, 77, 77);
+    margin: 3vmin 4vmin;
+}
+
+.Login_cancel:hover{
+    color: red;
+}
+
+@media only screen and (max-width: 767px) {
+    .loginContainer p{
+        font-size: 4vmin;
+    }
+    .emailLogin{
+        width:80vmin;
+        padding: 1.5vmin;
+        font-size: 4vmin;   
+    }
+    
+    
+    .passContainerLogin{
+        width:80vmin;    
+        font-size: 4vmin;
+    }
+    
+    .passLogin{
+        width: 70vmin;
+        padding: 1.5vmin;
+        font-size: 4vmin;
+    }
+    
+    .eyeLogin{
+        width: 10vmin;
+        font-size: 5vmin;
+    }
+    
+    .loginContainer form button{
+        width:80vmin;
+        padding: 1.5vmin;
+        font-size: 4vmin;
+    }
+    .Login_cancel{
+        font-size: 5vmin;
+    }
+
+}

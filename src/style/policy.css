@@ -1,0 +1,59 @@
+.policyContainer{
+    width: 100vw;
+    min-height:100vh ;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.policy{
+    width: 90vw;
+    min-height: 90vh;
+    background-color: white;
+    padding: 10vmin;
+    margin: 15vmin 5vmin 5vmin 5vmin;
+    border-radius: 2vmin;
+    box-shadow: 1px 1px 5px grey;
+    font-family: Roboto;
+}
+
+.policy> h1{
+    font-size: 6vmin;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vmin;
+    font-weight: bold;
+}
+
+.policy>h3{
+    font-size: 5.5vmin;
+    margin-top: 6vmin;
+}
+
+.policy> h4{
+    margin: 3vmin 0 2vmin 0;
+    font-size: 4vmin;
+}
+
+.policy>ul{
+    padding: 2vmin 5vmin;
+}
+
+.policy_date{
+    margin: 0 0 3vmin 2vmin;
+    font-weight: bold;
+}
+
+.policy>p{
+    margin: 1vmin;
+}
+
+.policy > ul > li{
+    margin: 1vmin;
+}
+
+.policy_contact{
+    font-weight: bold;
+    margin: 0 1vmin;
+}

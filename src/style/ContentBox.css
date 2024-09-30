@@ -1,26 +1,352 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700;800&family=Outfit:wght@200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@500;600;700;800&family=Outfit:wght@200;300;400&display=swap');
-
-*{
-    margin: 0%;
-    padding: 0%;
-    border: none;
-    box-sizing: border-box;
-}
-
-html {
-    overflow-y: scroll;
-  }
-
-body{
-    background-color: whitesmoke;
-    width: 100%;
+.Main{
+    margin: 5vmin 2vmin 5vmin 2vmin;
+    width: 98.1vw;
+    /* min-height: 100vh; */
+    /* border: 0.5vmin solid black; */
+    border-radius: 1.5vmin;
+    /* width: 97vmin; */
     /* height: 100vh; */
-    display: grid;
-    place-content: center ;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* border: 1px solid blue; */
+    /* justify-content: center; */
 
 }
 
+.Main_container1{
+    width: calc(98.1vw - 350px);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.mainContainer{
+    /* border: 1px solid green; */
+    /* margin-top: 3vmin; */
+    width: 110vmin;
+
+}
+
+/*************************************************************** Input styling *************************************************************/
+
+.username{
+    /* background-color:#33a6f3; */
+    background-color:rgb(23, 248, 109);
+    color: white;
+    font-size: 2.8vmin;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    width: 50%;
+    padding: 1.5vmin 3vmin;
+    border-radius: 2vmin 2vmin 0 0;
+    overflow-wrap: break-word;
+    /* text-align: center; */
+}
+
+.usernameInput{
+    background-color: rgb(23, 248, 109);
+    color: white;
+    font-size: 2.8vmin;
+    font-weight: bold;
+    width: 100%;
+    height: 3.3vmin;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.usernameInput::selection{
+    background-color: yellow;
+    color: black;
+}
+
+/* .usernameInput::placeholder{
+    opacity: 1;
+    color: white;
+} */
+
+.birthDateMain{
+    /* background-color: rgb(31, 150, 219); */
+    background: linear-gradient(-30deg, #2eaafa, #1f2f98);
+    /* max-width: 70%; */
+    /* height: 14vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 0vmin 1.5vmin 0 0;
+    /* border: 2px solid red; */
+    /* margin: 2vw; */
+}
+
+.birthDateTitle{
+    padding: 2vmin 0 2vmin 10vmin;
+    width: 70%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 3vmin;
+}
+
+/* .birthDateMain:hover .birthDateContainer{
+    display: flex;
+} */
+
+
+.birthDateContainer{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+    /* background-color: whitesmoke; */
+    background-color: rgb(204, 234, 252);
+    /* border: solid 2px rgb(31, 150, 219); */
+    /* border-radius: 10px; */
+    /* width: 27vw;
+    height: 12vw; */
+}
+
+.birthDateForm{
+    display: flex;
+    flex-direction: row;
+    
+    /* margin: 2vw; */
+    /* padding: 25px 5px; */
+    
+}
+
+.birthDay{
+    height: 6vmin;
+    width: 15vmin;
+    margin: 1.5vmin;
+    padding: 0 2vmin;
+    outline: none;
+    font-size: 2vmin;
+    background: none;
+    border-bottom: solid 0.3vmin black;
+}
+.birthMonth{
+    height: 6vmin;
+    width: 15vmin;
+    margin: 1.5vmin;
+    padding: 0 2vmin;
+    outline: none;
+    font-size: 2vmin;
+    background: none;
+    border-bottom: solid 0.3vmin black;
+}
+.birthYear{ 
+    height: 6vmin;
+    width: 15vmin;
+    margin: 1.5vmin;
+    padding: 0 2vmin;
+    outline: none;
+    font-size: 2vmin;
+    background: none;
+    border-bottom: solid 0.3vmin black;
+}
+
+.submitBtn{
+    background-color: transparent;
+    margin: 0 4vmin 0 12vmin;
+    font-size: 3.5vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 8vmin;
+    /* border: none; */
+    /* text-align: center; */
+    width: 5.5vmin;
+    height: 5.5vmin;
+    border-radius: 50%;
+    cursor: pointer;
+    /* height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 10px; */
+    color: white;
+    /* padding: 0 50px; */
+    /* background-color: rgb(26, 224, 26); */
+}
+.submitBtn:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(31, 150, 219);
+}
+
+.deleteBtn{
+    background-color: transparent; 
+    font-size: 3.5vmin;
+    display: flex;
+    position: absolute;
+    right: 5vmin;
+    align-items: center;
+    justify-content: center;
+    width: 5.5vmin;
+    height: 5.5vmin;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+}
+.deleteBtn:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(31, 150, 219);
+}
+
+.userStar{
+    background-color: transparent; 
+    font-size: 3.5vmin;
+    display: flex;
+    position: absolute;
+    right: 5vmin;
+    align-items: center;
+    justify-content: center;
+    width: 5vmin;
+    height: 5vmin;
+    border-radius: 50%;
+    cursor: pointer;
+    color: yellow;
+}
+
+.inputLabel{
+    display: none;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding: 2px 0;
+    position: relative;
+    /* border: 3px solid yellow; */
+}
+
+.edit{
+    color: white; 
+    background-color: transparent;
+    position: absolute;
+    right: 8vmin;
+    margin: 0 4vmin 0 12vmin;
+    font-size: 3.5vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: none; */
+    /* text-align: center; */
+    width: 5.5vmin;
+    height: 5.5vmin;
+    border-radius: 50%;
+    cursor: pointer;
+    /* transition: 1s; */
+
+}
+
+.edit:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(31, 150, 219);
+}
+
+.contentbox_warning{
+    background-color: red;
+    color: white;
+    font-size: 2vmin;
+    padding: 1vmin 3vmin;
+    width: 90%;
+    margin: 1vmin;
+    font-family: Inter;
+}
+
+
+/* ************************************************************* BirthDayCountDown styling *************************************************************/
+.countDownContainer{
+    /* background-color: white; */
+    /* width: 100%;
+    height: 40vmin; */
+    background: linear-gradient(50deg, #ff00d4, #00ddff, #00ff80 );
+    padding: 2.5vmin;
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.counter{
+    background-color: white;
+    width: 100%;
+    height: 20vmin;
+    border-radius: 5px;
+    color: grey;
+    font-size: 4vmin;
+
+}
+
+.confetti{
+    width: 100%;
+    height: 20vmin;
+    overflow: hidden;
+}
+
+
+#completeConfetti{
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98vw;
+    height: 100vh;
+}
+
+
+.textContainer{
+    z-index: 2;
+    position: relative;
+    top: -85%;
+    height: 40vmin;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10vmin;
+}
+
+.textContainer h3:nth-child(1){
+    color: white;
+    padding: 2vmin;
+    background-color: red;
+    font-size: 8vmin;
+    min-width: 14vmin;
+    min-height: 14vmin;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-align: center;
+    border-radius: 1vmin 0 0 1vmin;
+   
+}
+
+.textContainer h3:nth-child(2){
+    min-width: 14vmin;
+    min-height: 14vmin;
+    background-color: white;
+    border-radius: 0 1vmin 1vmin 0;
+    padding: 4vmin 2vmin;
+    color: black;
+    font-size: 4vmin;
+    letter-spacing: 0.2vmin;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/************************************************************** Calender styling *************************************************************/
 
 .mainCalender{
     background-color: white;
@@ -93,299 +419,9 @@ body{
     color: rgb(64, 64, 64);
 }
 
-.username{
-    /* background-color:#33a6f3; */
-    background-color:rgb(23, 248, 109);
-    color: white;
-    font-size: 2.8vmin;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-    width: 50%;
-    padding: 1.5vmin 3vmin;
-    border-radius: 2vmin 2vmin 0 0;
-    overflow-wrap: break-word;
-    /* text-align: center; */
-}
 
-.usernameInput{
-    background-color: rgb(23, 248, 109);
-    color: white;
-    font-size: 2.8vmin;
-    font-weight: bold;
-    width: 100%;
-    height: 3.3vmin;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-    outline: none;
-    resize: none;
-}
+/************************************************************** birthday card styling *************************************************************/
 
-.usernameInput::selection{
-    background-color: yellow;
-    color: black;
-}
-
-/* .usernameInput::placeholder{
-    opacity: 1;
-    color: white;
-} */
-
-.birthDateMain{
-    /* background-color: rgb(31, 150, 219); */
-    background: linear-gradient(-30deg, #2eaafa, #1f2f98);
-    /* max-width: 70%; */
-    /* height: 14vw; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    border-radius: 0vmin 1.5vmin 0 0;
-    /* margin: 2vw; */
-}
-
-.birthDateTitle{
-    padding: 2vmin;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    letter-spacing: 1px;
-    font-size: 3vmin;
-}
-
-/* .birthDateMain:hover .birthDateContainer{
-    display: flex;
-} */
-
-
-.birthDateContainer{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 20px;
-    /* background-color: whitesmoke; */
-    background-color: rgb(204, 234, 252);
-    /* border: solid 2px rgb(31, 150, 219); */
-    /* border-radius: 10px; */
-    /* width: 27vw;
-    height: 12vw; */
-}
-
-.birthDateForm{
-    display: flex;
-    flex-direction: row;
-    /* margin: 2vw; */
-    /* padding: 25px 5px; */
-    
-}
-
-.birthDay{
-    height: 6vmin;
-    width: 15vmin;
-    margin: 1.5vmin;
-    padding: 0 2vmin;
-    outline: none;
-    font-size: 2vmin;
-    background: none;
-    border-bottom: solid 0.3vmin black;
-}
-.birthMonth{
-    height: 6vmin;
-    width: 15vmin;
-    margin: 1.5vmin;
-    padding: 0 2vmin;
-    outline: none;
-    font-size: 2vmin;
-    background: none;
-    border-bottom: solid 0.3vmin black;
-}
-.birthYear{ 
-    height: 6vmin;
-    width: 15vmin;
-    margin: 1.5vmin;
-    padding: 0 2vmin;
-    outline: none;
-    font-size: 2vmin;
-    background: none;
-    border-bottom: solid 0.3vmin black;
-}
-
-.submitBtn{
-    background-color: transparent;
-    margin: 0 8vmin;
-    font-size: 3.5vmin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border: none; */
-    /* text-align: center; */
-    width: 5.5vmin;
-    height: 5.5vmin;
-    border-radius: 50%;
-    cursor: pointer;
-    /* height: 40px;
-    width: 100px;
-    border-radius: 5px;
-    margin: 10px; */
-    color: white;
-    /* padding: 0 50px; */
-    /* background-color: rgb(26, 224, 26); */
-}
-.submitBtn:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-    color: rgb(31, 150, 219);
-}
-
-.inputLabel{
-    display: none;
-}
-
-.header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2px 0;
-}
-
-.edit{
-    color: white; 
-    background-color: transparent;
-    margin: 0 8vmin;
-    font-size: 3.5vmin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border: none; */
-    /* text-align: center; */
-    width: 5.5vmin;
-    height: 5.5vmin;
-    border-radius: 50%;
-    cursor: pointer;
-    /* transition: 1s; */
-
-}
-
-.edit:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-    color: rgb(31, 150, 219);
-}
-
-.warning{
-    color: red;
-    padding-top: 2px;
-    /* text-align: start; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.Main{
-    margin-top: 3vmin;
-    width: 98.1vw;
-    min-height: 100vh;
-    /* border: 0.5vmin solid white; */
-    border-radius: 1.5vmin;
-    /* width: 97vmin; */
-    /* height: 100vh; */
-    padding: 2vmin;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-
-}
-
-.mainContainer{
-    margin-top: 15vmin;
-    width: 97vmin;
-
-}
-
-.countDownContainer{
-    /* background-color: white; */
-    /* width: 100%;
-    height: 40vmin; */
-    background: linear-gradient(50deg, #ff00d4, #00ddff, #00ff80 );
-    padding: 2.5vmin;
-    
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-}
-
-.counter{
-    background-color: white;
-    width: 100%;
-    height: 20vmin;
-    border-radius: 5px;
-    color: grey;
-    font-size: 4vmin;
-
-}
-
-#confetti{
-    width: 100%;
-    height: 20vmin;
-    overflow: hidden;
-}
-
-
-#completeConfetti{
-    z-index: -10;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 98vw;
-    height: 100vh;
-}
-
-
-.textContainer{
-    z-index: 2;
-    position: relative;
-    top: -85%;
-    height: 40vmin;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 10vmin;
-}
-
-.textContainer h3:nth-child(1){
-    color: white;
-    padding: 2vmin;
-    background-color: red;
-    font-size: 8vmin;
-    min-width: 14vmin;
-    min-height: 14vmin;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    text-align: center;
-    border-radius: 1vmin 0 0 1vmin;
-   
-}
-
-.textContainer h3:nth-child(2){
-    min-width: 14vmin;
-    min-height: 14vmin;
-    background-color: white;
-    border-radius: 0 1vmin 1vmin 0;
-    padding: 4vmin 2vmin;
-    color: black;
-    font-size: 4vmin;
-    letter-spacing: 0.2vmin;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.counterTitle{
-    background-color: red;
-    margin-bottom: 2vmin ;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 3vmin;
-}
 
 .birthdayCardContainer{
     margin-top: 1vmin;
@@ -437,15 +473,9 @@ body{
     padding: 4vmin;
     border-radius: 0.5vmin;
 }
-/* 
-.birthdayCardAge{
-    border: 1px solid black;
-    position: relative;
-    top: -50%;
-    left: -50%;
-    z-index: 2;
-    width: 100%;
-} */
+
+
+/************************************************************** Quote styling *************************************************************/
 
 .quoteContainer{
     background-color: white;
@@ -481,3 +511,89 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/************************************************************** Adspace styling *************************************************************/
+
+.adBottom{
+    overflow: hidden;
+    height: 18vmin;
+    margin: 3vmin 0;
+    width: 100%;
+    padding: 1vmin;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;  */
+    /* background-color: white; */
+    /* font-family: Roboto; */
+    /* color: black; */
+    /* font-size: 2vmin; */
+    /* border: 0.1vmin solid rgb(15, 95, 127); */
+}
+.adSides{
+    overflow: hidden;
+    height: 600px;
+    width: 350px;
+    padding: 1vmin;
+    margin: 1vmin;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;  */
+    /* border: 0.1vmin solid rgb(15, 95, 127); */
+    /* background-color: white; */
+    /* font-family: Roboto;
+    color: black;
+    font-size: 2vmin; */
+}
+
+.sideAd_container{
+    margin: 1vmin;
+    height: 600px;
+    width: 350px;
+    /* position: absolute;
+    right: 0;  */
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1150px) {   
+    .Main_container1{
+        width: calc(98.1vw - 300px);
+    }
+    
+    .mainContainer{
+        width: 95vmin;
+    
+    }
+    .sideAd_container{
+        width: 300px;
+    }
+    .adSides{
+        width: 300px;
+    }
+    
+    
+   
+}
+@media only screen and (max-width: 1023px) {
+    .Main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .Main_container1{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+    
+    .mainContainer{
+        width: 95vmin;
+    
+    }
+    .sideAd_container{
+        display: none;
+    }
+    .adSides{
+        display: none;
+    }
+}

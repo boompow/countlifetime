@@ -1,0 +1,28 @@
+
+.notFound{
+    width: 98.9vw;
+    height: 100vh;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Quicksand;
+   
+}
+
+.notFound h1{
+    font-size: 25vmin;
+}
+
+.notFound h2{
+    font-size: 10vmin;
+    font-weight: bold;
+}
+
+.notFound p{
+    font-size: 4vmin;
+    font-family: Outfit;
+    padding: 4vmin;
+}

@@ -1,0 +1,115 @@
+.ConfirmEmailPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ConfirmEmailPageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 95vmin;
+    padding: 5vmin 5vmin 10vmin 5vmin;
+    border-radius: 1vmin;
+    font-family: Inter;
+    overflow: hidden;
+    position: relative;
+}
+
+.ConfirmEmailPageContainer h1{
+    text-align: center;
+    margin-bottom: 3vmin;
+   letter-spacing: 0.2vmin;
+}
+
+.ConfirmEmailPageContainer p{
+    font-size: 3vmin;
+    color: grey;
+    text-align: center;
+}
+
+.ConfirmEmailPageContainer form{
+    margin: 1vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ConfirmEmailPageContainer form input{
+    width:60vmin;
+    margin: 2vmin 1.5vmin 1vmin 1.5vmin;
+    padding: 1vmin;
+    outline: none;
+    font-family: Roboto;
+    font-size: 3vmin;
+    border-radius: 0.7vmin;
+    border: 0.1vmin solid grey;
+
+}
+.ConfirmEmailPageContainer form button{
+    background-color: rgb(13, 212, 86);
+    color: white;
+    width:60vmin;
+    margin: 2vmin 1.5vmin 4vmin 1.5vmin;
+    padding: 1vmin;
+    font-family: Outfit;
+    font-size: 3vmin;
+    border-radius: 0.7vmin;
+}
+
+.ConfirmEmailPageContainer form button:hover{
+    background-color: rgb(13, 246, 71);
+}
+
+.ConfirmEmailPageContainer div{
+    margin: 1vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginLink2{
+margin: 0 1vmin;
+text-decoration: underline;
+cursor: pointer;
+}
+
+.resend_code{
+    cursor: pointer;
+}
+
+.resend_code:hover{
+text-decoration: underline;
+}
+
+.decoration{
+    margin-top: 2vmin;
+    height: 6%;
+    width:100%;
+    position: absolute;
+    bottom: -1vmin;
+    background: linear-gradient(50deg, #ff00d4, #00ddff, #00ff80 );
+}
+
+@media only screen and (max-width: 767px) {
+    .ConfirmEmailPageContainer p{
+        font-size: 4vmin;
+    }
+    .ConfirmEmailPageContainer form input{
+        width:80vmin;
+        padding: 2.5vmin;
+        font-size: 4vmin;   
+    }
+    .ConfirmEmailPageContainer form button{
+        width:80vmin;
+        padding: 2.5vmin;
+        font-size: 4vmin;
+    }
+
+}

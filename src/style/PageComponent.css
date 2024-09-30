@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@500;600;700;800&family=Outfit:wght@200;300;400&display=swap');
+
+
+/* ****************************** Header styling ******************************/
+.Header{
+    position: fixed;
+    display: flex;
+    width:100vw;
+    min-height: 8vmin;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: white;
+    /* width: 100vw; */
+    z-index: 10;
+    box-shadow: 1px 0px 5px rgb(184, 183, 183);
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.logoContainer{
+    /* border: 1px solid black; */
+    width: 60%;
+}
+
+.checkMain, .checkLanding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 40%;
+     /* border: 1px solid black; */
+   
+}
+
+.logoContainer a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0vmin 0 0 0;
+    cursor: pointer;
+    margin: 2vmin;
+    font-size: 2vmin;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: Outfit;
+    color: rgb(4, 27, 38);
+    text-decoration: none;
+}
+
+
+.logo2{
+    background: linear-gradient(80deg, yellow, rgb(34, 225, 34), rgb(63, 178, 227), rgb(221, 35, 85), orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.checkLanding button, .checkMain button{
+    font-size: 2vmin;
+    padding: 1vmin 2vmin;
+    border-radius: 0.5vmin;
+    margin: 2vmin;
+    cursor: pointer;
+    
+
+    
+}
+
+.loginBtn{
+    border: 0.2vmin solid #1f2f98;
+    color: #1f2f98;
+    background-color: white;
+}
+
+.loginBtn:hover{
+    color: white;
+    background-color: #1f2f98;
+}
+
+.activateBtn{
+    background-color: rgb(7, 225, 7);
+    color: white;
+}
+
+.activateBtn:hover{
+    background-color: lime;
+}
+
+.logoutBtn{
+    color: white;
+    background-color: rgb(248, 11, 11);
+}
+
+.logoutBtn:hover{
+    background-color: red;
+}
+
+.signUpBtn{
+    background-color: rgb(246, 246, 3);
+
+}
+
+.signUpBtn:hover{
+    background-color: yellow;
+
+}
+
+.profileTitle{
+    background-color: white;
+    text-align: center;
+    /* border: 0.1vmin solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform:capitalize;
+    font-family: Quicksand;
+    font-weight: bolder;
+}
+
+.profileTitle div{
+    font-size: 3vmin;
+    padding-right: 1vmin;
+    color: rgb(22, 146, 234);
+}
+
+.profileTitle:hover{
+    background-color: whitesmoke;
+}
+
+.warningHeader{
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-size: 2vmin;
+    padding: 1vmin 3vmin;
+    margin: 1vmin;
+    font-family: Inter;
+}
+
+
+
+.landing{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 8vmin;
+}
+.help{
+    background-color: lime;
+    width: 98.9vw; 
+    height: 100vh;   
+}
+
+.dropdownContainer{
+    background-color: rgb(225, 221, 221);
+    z-index: 20;
+    position: fixed;
+    top: 5vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vmin 0 ;
+    border-radius: 0.5vmin;
+}
+
+.profileTitle:hover , .profileTitle:active, .dropdownContainer:hover, .dropdownContainer:active .dropdownContainer{
+    display: flex;
+}
+
+.dropdownContainer li{
+    cursor: pointer;
+    list-style: none;
+    margin: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 6vmin;
+    padding: 1vmin 2vmin;
+    /* border: 1px solid yellow; */
+}
+
+.dropdownContainer li:hover, .dropdownContainer li:active{
+    background-color: rgb(189, 185, 185);
+}
+
+.dropdown_option_1{
+    position: relative;
+}
+
+.dropdown_option_1 div{
+    position: absolute;
+    right: 0;
+    margin: 0 2vmin;
+}
+
+
+
+
+/******************************** Footer styling ******************************/
+
+.footer{
+    height: 6vmin;
+    /* width: 100%; */
+    width:100vw;
+    /* position: relative; */
+    /* position: fixed; */
+    /* position: absolute; */
+    /* bottom: 0%; */
+    background: linear-gradient(70deg, #2eaafa, #1f2f98);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3vmin;
+    font-family: Outfit;
+}
+
+/******************************** Nav styling ******************************/
+.Nav{
+   background: linear-gradient(80deg, yellow, rgb(34, 225, 34), rgb(63, 178, 227), rgb(221, 35, 85), orange);
+    width: 100%;
+    height: 6vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBox{
+    height: 4vmin;
+    width: 40%;
+    padding: 0.5vmin 2vmin;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.4vmin;
+    border-radius: 5vmin;
+    text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+    .top{
+        padding: 1vmin;
+    }
+    .logoContainer a{
+        font-size: 2.5vmin;
+    }
+    .Nav{
+        height: 7vmin;
+    }
+    .searchBox{
+        width: 70%;
+        height: 5vmin;
+        font-size: 3vmin;
+    }
+    .logoContainer{
+        width: 50%;
+    }
+
+    .checkLanding, .checkMain{
+        width: 50%;
+    }
+
+    .checkLanding button, .checkMain button{
+        font-size: 3vmin;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+   
+}

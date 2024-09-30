@@ -1,0 +1,144 @@
+.cls-1 {
+    font-size: 150px;
+    transform:translate(50%, 476.63px);
+    text-anchor: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    /* letter-spacing: -1vmin; */
+}
+
+.cls-1,
+.cls-2,
+.cls-20 {
+    fill: #e00919;
+}
+
+.cls-22,
+.cls-4,
+.cls-6,
+.cls-7,
+.cls-8 {
+    font-family: CooperBlack, Cooper, Coiny, Happy Monkey, Alice, Pacifico ;
+}
+
+.cls-3 {
+    fill: #4bb8a8;
+}
+
+.cls-20,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8 {
+    isolation: isolate;
+}
+
+.cls-4,
+.cls-6,
+.cls-7,
+.cls-8 {
+    font-size: 39.4px;
+    fill: #fff;
+}
+
+.cls-6 {
+    letter-spacing: -0.04em;
+}
+
+.cls-7 {
+    letter-spacing: -0.06em;
+}
+
+.cls-8 {
+    letter-spacing: -0.05em;
+}
+
+.cls-9 {
+    fill: #34a4a7;
+    stroke: #288386;
+}
+
+.cls-12,
+.cls-13,
+.cls-15,
+.cls-9 {
+    stroke-miterlimit: 10;
+}
+
+.cls-13,
+.cls-15,
+.cls-9 {
+    stroke-width: 0.5px;
+}
+
+.cls-10 {
+    fill: #3eb2b3;
+}
+
+.cls-11 {
+    fill: #6abcb7;
+}
+
+.cls-12 {
+    fill: none;
+    stroke: #fff;
+}
+
+.cls-13 {
+    fill: #c6181c;
+    stroke: #961916;
+}
+
+.cls-14 {
+    fill: #e4292e;
+}
+
+.cls-15 {
+    fill: #faecd0;
+    stroke: #efbb61;
+}
+
+.cls-16 {
+    fill: #f7f2df;
+}
+
+.cls-17 {
+    fill: #fefdf9;
+}
+
+.cls-18 {
+    fill: #fcbd1d;
+}
+
+.cls-19 {
+    fill: #4c7abd;
+}
+
+.cls-20 {
+    font-size: 45px;
+}
+
+.cls-20 {
+    /* font-family: Quicksand;
+    font-weight: bold; */
+    font-family: Cooper, Coiny, Happy Monkey, Alice, Pacifico;
+    /* font-family: AltavistaPersonalUse, Altavista; */
+    /* font-family: 'altavista-regular', sans-serif; */
+    text-anchor: middle;
+    transform: translate(50%, 542.85px) scale(1.06, 1);
+}
+
+.cls-21 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    fill: #878384;
+   
+}
+
+.cls-22 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    fill: #878384;
+}

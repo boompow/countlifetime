@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Know how long you've been alive down to the second by entering your birthday"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -24,7 +24,29 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+
+    <!-- cookie-script -->
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/709b2a37fd7e2acd651171f17598789e.js"></script>
+
+      <!-- Google tag (gtag.js) -->
+    <script  type="text/plain" data-cookiescript="accepted" async src="https://www.googletagmanager.com/gtag/js?id=G-XGPW9HSB0M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XGPW9HSB0M');
+    </script>
+
+    <!-- google adsense -->
+    <script type="text/plain" data-cookiescript="accepted" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4918114251860863"
+    crossorigin="anonymous"></script>
+
+    <!-- adcash tag -->
+    <meta name="a.validate.02" content="8NKdsf5X2JlY-Zy6mze8LyGzKBoHYA-Hf65O" />
+
+    <title>Countlifetime</title>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +61,31 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+     <!-- google ad units -->
+     <!-- <script  type="text/plain" data-cookiescript="accepted"  async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4918114251860863"
+     crossorigin="anonymous"></script> -->
+     
+     <!-- adcash script -->
+     <script data-cfasync="false" type="text/plain" data-cookiescript="accepted" data-adel="atag" src="//ashcdn.com/script/atg.js" czid="laodvfyqtb"></script>
+    <script data-cfasync="false" type="text/plain" data-cookiescript="accepted" src="//clearonclick.com/a/display.php?r=6765486"></script>
+    
+    
+    <!-- for PWA service worker registration -->
+    <script>
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+            .register("%PUBLIC_URL%/service_worker.js")
+            .then((registration) => {
+              console.log("SW Registered!");
+            })
+            .catch((error) => {
+              console.log("SW Registration Failed");
+              console.log(error)
+            });
+        } else {
+          console.log("Not supported");
+        }
+    </script>
   </body>
 </html>

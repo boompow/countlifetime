@@ -1,0 +1,277 @@
+.signup{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+}
+
+.authContainer{
+    margin: 2vmin;
+    /* margin: 5vmin 5vmin 5vmin 5vmin; */
+    width: 90vmin;
+    height: 90vmin;
+    display: flex;
+    flex-direction: row;
+    border: 0.4vmin solid rgb(5, 75, 110);
+    border-radius: 3vmin;
+    background-color: rgb(5, 75, 110);
+    overflow: hidden;
+
+}
+
+.logo{
+    height:100% ;
+    width: 40vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.logo img{
+    width: 60%;
+
+}
+.registerContainer{
+    width: 60vmin;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmin;
+    
+}
+
+.registerContainer h1{
+    color: white;
+    font-size: 5vmin;
+    font-family: Outfit;
+    letter-spacing: 0.2vmin;
+    text-transform: uppercase;
+    margin: 3vmin 3vmin 2vmin 3vmin;
+}
+
+.registerContainer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 2vmin; */
+}
+
+.nameInput{
+    width: 48vmin;
+    margin: 1.5vmin;
+    padding: 1vmin;
+    outline: none;
+    font-family: Outfit;
+    font-size: 2.5vmin;
+    border-radius: 0.7vmin; 
+    /* border: 0.2vmin solid red; */
+ }
+.email{
+    width: 48vmin;
+    margin: 1.5vmin;
+    padding: 1vmin;
+    outline: none;
+    font-family: Outfit;
+    font-size: 2.5vmin;
+    border-radius: 0.7vmin; 
+    
+ }
+
+.registerContainer form input::selection{
+    background-color: yellow;
+    color: black;
+}
+
+
+.signupLabel{
+   border-bottom: 0.3vmin solid white;
+    color: white;
+    width: 53vmin;
+    text-align: left;
+    font-size: 2.5vmin;
+    text-transform: uppercase;
+    font-family: Outfit;
+    padding: 1vmin;
+    border-radius: 1.5vmin 1.5vmin 0 0 ;
+    margin-bottom: 1vmin;
+}
+
+
+.form1{
+    display: flex;
+    flex-direction: row;
+}
+
+.registerContainer form select{
+    width: 14vmin;
+    margin: 1.5vmin;
+    padding: 1vmin;
+    outline: none;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 2.5vmin;
+    border-radius: 0.7vmin;
+    /* border: 0.2vmin solid #1f2f98; */
+    /* to clear the default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+}
+
+.registerContainer form select::-ms-expand {
+    display: none;
+}
+
+.form2{
+    margin-top: 1.5vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.passContainerSignup{
+    width: 48vmin;
+    margin: 1.5vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.passSignup{
+    width: 43vmin;
+    padding: 1vmin;
+    outline: none;
+    font-family: Outfit;
+    font-size: 2.5vmin;
+    border-radius: 0.7vmin 0 0 0.7vmin;
+    /* border: 1px solid yellow; */
+}
+
+.eyeSignup{
+    width: 5vmin;
+    text-align: center;
+    background-color: white;
+    color: grey;
+    z-index: 2;
+    padding: 1.5vmin 1vmin 0.5vmin 0;
+    font-size: 2.5vmin;
+    border-radius:0 0.7vmin 0.7vmin 0;
+}
+
+.registerBtn{
+    width: 15vmin;
+    padding: 1vmin 2vmin;
+    border-radius: 5vmin;
+    margin: 2vmin 3vmin 2vmin 3vmin;
+    font-size: 2.8vmin;
+    font-family: Outfit;
+    background-color: rgb(237, 237, 5);
+    color: black ;
+}
+
+.registerBtn:hover{
+    background-color: yellow;
+    color: black ;
+}
+
+.loginLink{
+    width: 25vmin;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin: 2vmin;
+    font-size: 3vmin;
+    font-family: Outfit;
+    margin: 1.5vmin 2vmin 3vmin 2vmin;
+    position: relative;
+    left: 30%;
+}
+
+.loginLink:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+    .authContainer{
+       margin-top: 20;
+       height: 94vmin;
+    }
+    .logo{
+        display: none;
+    }
+    .registerContainer{
+        width: 100%;
+    }
+
+    .signupLabel{
+        width: 65vmin;
+        font-size: 3vmin;
+    }
+
+    .form1 input{
+        width: 18vmin;
+    }
+
+    .nameInput{
+        width: 61vmin;
+    }
+    .email{
+        width: 61vmin;
+    }
+    .passContainerSignup{
+        width: 61vmin;
+    }
+    .passSignup{
+        width: 56vmin;
+    }
+
+    .eyeSignup{
+        font-size: 3.2vmin;
+    }
+
+    .registerContainer form input{
+        font-size: 3.2vmin;
+    }
+    .registerBtn{
+        width: 20vmin;
+        font-size: 3.2vmin;
+        padding: 1.5vmin 2vmin;
+    }
+
+
+}
+@media only screen and (min-width: 1024px) {
+    .authContainer{
+        width: 80vw;
+    }
+
+    .registerContainer{
+        width: 45vw;
+    }
+    .logo{
+        width: 35vw;
+    }
+
+    .logo img{
+        width: 40%;
+    }
+   
+}
+
+
+
+
