@@ -36,6 +36,8 @@ const AddContentBox = () => {
   const [allow, setAllow] = useState(false);
   const [backendError, setBackendError] = useState("");
 
+  const api = process.env.REACT_APP_API;
+
   const newProfile = {
     id: id,
     name: name,
@@ -62,7 +64,8 @@ const AddContentBox = () => {
     try {
       const response = await fetch(
         // "http://localhost:5000/api/dataCrud/add",
-        "https://api.1.countlifetime.com/api/dataCrud/add",
+        // "https://api.1.countlifetime.com/api/dataCrud/add",
+        `${api}/api/dataCrud/add`,
         {
           headers: {
             "Content-type": "application/json",

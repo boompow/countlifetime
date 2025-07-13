@@ -25,6 +25,8 @@ const NewPassword = () => {
   const [allow, setAllow] = useState(false);
   const [backendError, setBackendError] = useState("");
 
+  const api = process.env.REACT_APP_API;
+
   const navigate = useNavigate();
 
   const server = async () => {
@@ -32,7 +34,8 @@ const NewPassword = () => {
       try {
         const response = await fetch(
           // "http://localhost:5000/api/reset-password",
-          "https://api.1.countlifetime.com/api/reset-password",
+          // "https://api.1.countlifetime.com/api/reset-password",
+          `${api}/api/reset-password`,
           {
             headers: {
               "Content-type": "application/json",

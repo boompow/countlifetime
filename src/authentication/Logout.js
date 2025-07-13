@@ -4,13 +4,15 @@ import { useNavigate } from "react-router-dom";
 
 const Logout = () => {
   const { setLoggedin } = useDataContext();
+  const api = process.env.REACT_APP_API;
 
   const navigate = useNavigate();
 
   const logoutUser = async () => {
     const response = await fetch(
       // "http://localhost:5000/api/refreshToken/logout",
-      "https://api.1.countlifetime.com/api/refreshToken/logout",
+      // "https://api.1.countlifetime.com/api/refreshToken/logout",
+      `${api}/api/refreshToken/logout`,
       {
         headers: {
           Accept: "application/json",

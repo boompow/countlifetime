@@ -33,6 +33,8 @@ const ProfilePage = () => {
   const [backendErrorPasswordCheck, setBackendErrorPasswordCheck] =
     useState("");
 
+  const api = process.env.REACT_APP_API;
+
   const email = userData.email;
 
   const navigate = useNavigate();
@@ -42,7 +44,8 @@ const ProfilePage = () => {
     try {
       const response = await fetch(
         // "http://localhost:5000/api/account/check",
-        "https://api.1.countlifetime.com/api/account/check",
+        // "https://api.1.countlifetime.com/api/account/check",
+        `${api}/api/account/check`,
         {
           headers: {
             "Content-type": "application/json",
@@ -75,7 +78,8 @@ const ProfilePage = () => {
     try {
       const response = await fetch(
         // "http://localhost:5000/api/account/edit",
-        "https://api.1.countlifetime.com/api/account/edit",
+        // "https://api.1.countlifetime.com/api/account/edit",
+        `${api}/api/account/edit`,
         {
           headers: {
             "Content-type": "application/json",
@@ -107,7 +111,8 @@ const ProfilePage = () => {
     try {
       const response = await fetch(
         // "http://localhost:5000/api/account/delete",
-        "https://api.1.countlifetime.com/api/account/delete",
+        // "https://api.1.countlifetime.com/api/account/delete",
+        `${api}/api/account/delete`,
         {
           headers: {
             "Content-type": "application/json",

@@ -23,12 +23,15 @@ const ConfirmCode = () => {
   const [allow, setAllow] = useState(false);
   const [backendError, setBackendError] = useState("");
 
+  const api = process.env.REACT_APP_API;
+
   const navigate = useNavigate();
   const server = async () => {
     try {
       const response = await fetch(
         // "http://localhost:5000/api/activate"
-        "https://api.1.countlifetime.com/api/activate",
+        // "https://api.1.countlifetime.com/api/activate",
+        `${api}/api/activate`,
         {
           headers: {
             "Content-type": "application/json",
@@ -80,7 +83,9 @@ const ConfirmCode = () => {
       setIsLoading(true);
       const response = await fetch(
         // "http://localhost:5000/api/resend-code"
-        "https://api.1.countlifetime.com/api/resend-code",
+        // "https://api.1.countlifetime.com/api/resend-code",
+        `${api}/api/resend-code`,
+
         {
           headers: {
             "Content-type": "application/json",

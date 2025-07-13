@@ -39,6 +39,8 @@ const Signup = () => {
 
   const navigate = useNavigate();
 
+  const api = process.env.REACT_APP_API;
+
   const newProfile = {
     id: people ? people.length + 1 : 1,
     name: "You",
@@ -62,7 +64,8 @@ const Signup = () => {
     try {
       const response = await fetch(
         // "http://localhost:5000/api/register",
-        "https://api.1.countlifetime.com/api/register",
+        // "https://api.1.countlifetime.com/api/register",
+        `${api}/api/register`,
         {
           headers: {
             "Content-type": "application/json",

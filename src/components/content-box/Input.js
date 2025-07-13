@@ -60,6 +60,8 @@ const Input = ({
     "December",
   ];
 
+  const api = process.env.REACT_APP_API;
+
   //to refresh access token regularly
   useEffect(() => {
     if (loggedin) {
@@ -70,7 +72,8 @@ const Input = ({
           try {
             const refreshResult = await fetch(
               // "http://localhost:5000/api/refreshToken/",
-              "https://api.1.countlifetime.com/api/refreshToken/",
+              // "https://api.1.countlifetime.com/api/refreshToken/",
+              `${api}/api/refreshToken/`,
               {
                 headers: {
                   "Content-type": "application/json",
@@ -98,7 +101,8 @@ const Input = ({
     try {
       const response = await fetch(
         // "http://localhost:5000/api/dataCrud/delete",
-        "https://api.1.countlifetime.com/api/dataCrud/delete",
+        // "https://api.1.countlifetime.com/api/dataCrud/delete",
+        `${api}/api/dataCrud/delete`,
         {
           headers: {
             "content-type": "application/json",
@@ -140,7 +144,8 @@ const Input = ({
     try {
       const response = await fetch(
         // "http://localhost:5000/api/dataCrud/edit",
-        "https://api.1.countlifetime.com/api/dataCrud/edit",
+        // "https://api.1.countlifetime.com/api/dataCrud/edit",
+        `${api}/api/dataCrud/edit`,
         {
           headers: {
             "Content-type": "application/json",

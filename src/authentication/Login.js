@@ -33,6 +33,8 @@ const Login = () => {
   const [allow, setAllow] = useState(false);
   const [backendError, setBackendError] = useState("");
 
+  const api = process.env.REACT_APP_API;
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -42,7 +44,8 @@ const Login = () => {
           setIsLoading(true);
           const response = await fetch(
             // "http://localhost:5000/api/refreshToken/persist/",
-            "https://api.1.countlifetime.com/api/refreshToken/persist/",
+            // "https://api.1.countlifetime.com/api/refreshToken/persist/",
+            `${api}/api/refreshToken/persist/`,
             {
               headers: {
                 "Content-type": "application/json",
@@ -110,7 +113,9 @@ const Login = () => {
       try {
         const response = await fetch(
           // "http://localhost:5000/api/login"
-          "https://api.1.countlifetime.com/api/login",
+          // "https://api.1.countlifetime.com/api/login",
+          `${api}/api/login`,
+
           {
             headers: {
               "Content-type": "application/json",

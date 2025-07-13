@@ -12,11 +12,14 @@ const ForgotPassword = () => {
   const [allow, setAllow] = useState(false);
   const [backendError, setBackendError] = useState("");
 
+  const api = process.env.REACT_APP_API;
+
   const server = async () => {
     try {
       const response = await fetch(
         // "http://localhost:4000/api/email/reset-password",
-        "https://api.2.countlifetime.com/api/email/reset-password",
+        // "https://api.2.countlifetime.com/api/email/reset-password",
+        `${api}/api/email/reset-password`,
         {
           headers: {
             "Content-type": "application/json",
